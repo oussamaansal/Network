@@ -1,0 +1,159 @@
+.content-div{
+    height: fit-content;
+    background-color: #e3e3e3;
+    border: 5px solid transparent;
+    border-radius: 5px;
+}
+.post {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .content {
+    
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 20px 20px 10px;
+
+  }
+  
+  .text-muted {
+    color: #8e8e8e;
+  }
+  
+  .content-div {
+    margin-bottom: 10px;
+  }
+  
+  .like-button {
+    color: #262626;
+    font-size: 16px;
+  }
+  
+  .like-button i {
+    margin-right: 5px;
+  }
+  .posts {
+    margin-top: 20px;
+  }
+  .instagram-form {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+  }
+  
+
+  
+  textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #dbdbdb;
+    resize: none;
+    font-size: 14px;
+  }
+  
+.btn-primary {
+    background-color: #0095f6;
+    border-color: #0095f6;
+    color: white;
+    font-weight: bold;
+  }
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination-buttons button {
+    margin: 0 5px;
+}
+.liked {
+  color: red;
+}
+.notShow{
+  display: none;
+}
+.btnEdit{
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border: 1px solid rgb(173, 165, 165);
+  border-radius: 4px;
+  margin-left: 60%;
+  height: 120%;
+  color:  rgb(173, 165, 165);
+
+}
+.btnEdit:hover{
+  background-color: #528f9d;
+  color:white;
+
+}
+.saveBtn{
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border: 2px solid rgb(2, 163, 2);
+  border-radius: 4px;
+ 
+  height: 140%;
+  color: rgb(2, 163, 2);
+}
+.saveBtn:hover{
+  background-color: rgb(2, 163, 2);
+  border: 2px solid transparent;
+  color:white;
+
+}
+.follow-btn{
+  background-color: #28a745; /* Green */
+  color: white;
+  border: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+.follow-btn:hover{
+  background-color: #218838; 
+  
+  transform: scale(1.05);
+
+}
+.unfollow-btn{
+  background-color: #dc3545; 
+  color: white;
+  border: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.unfollow-btn:hover{
+  background-color: #c82333; 
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.content-div textarea {
+  background-color: transparent;  
+  border: none;                   
+  width: 100%;                   
+  height: auto;                   
+  color: inherit;                 
+  font-size: 18;            
+  font-family: inherit;           
+  resize: none;                  
+  outline: none;                 
+  padding: 0;                     
+  overflow: hidden;              
+}

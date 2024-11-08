@@ -1,0 +1,48 @@
+{% extends "network/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="container" >
+    
+<section class="vh-100">
+    <div class="container py-5 ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-12 col-xl-4">
+  
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body text-center">
+              
+              <h4 class="mb-2">{{profile_user.full_name}}</h4>
+            
+              
+              
+              <div class="d-flex justify-content-between text-center mt-5 mb-2">
+                <div>
+                  <p class="mb-2 h5" id='following'></p>
+                  <p class="text-muted mb-0">Following</p>
+                </div>
+                <div class="px-3">
+                  <p class="mb-2 h5" id='followers'></p>
+                  <p class="text-muted mb-0">Followers</p>
+                </div>
+                
+              </div>
+              <button id='follow-btn' type="button"  class="btn btn-primary btn-rounded btn-lg">
+                
+              </button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div id="posts" class="posts">
+        
+      </div>
+    </div>
+  </section>
+  
+</div>
+
+  {% endblock %}
+{% block script %}
+    <script src="{% static 'network/profile.js' %}"></script>
+{% endblock %}

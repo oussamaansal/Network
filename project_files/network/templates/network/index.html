@@ -1,0 +1,35 @@
+{% extends "network/layout.html" %}
+{% load static %}
+{% block body %}
+<div class='container mt-4'>
+    <!-- Check if user is authenticated -->
+    {% if user.is_authenticated %}
+    <!-- New Post Form for authenticated users -->
+    <div class="form-group instagram-form mb-4 p-3">
+        {% csrf_token %}
+        
+        <textarea class="form-control" id="newpost" rows="3" placeholder="What's on your mind?"></textarea>
+        <button type="submit" id="addPost" class="btn btn-primary mt-2">Add Post</button>
+    </div>
+    {% else %}
+    <!-- Message for unauthenticated users -->
+    <h4 class="text-center">Please <a href="{% url 'login' %}" class="text-primary">Login here.</a></h4>
+    {% endif %}
+    
+    <!-- Posts List -->
+    <div id="posts" class="posts">
+        
+    </div>
+    {%if user.is_authenticated%}
+    <div class="pagination-buttons">
+        <button id="previousPage" class="btn btn-primary mr-2"  >Previous</button>
+        <button id="nextPage" class="btn btn-primary">Next</button>
+    </div>
+    {%endif%}
+    
+    
+</div>
+{% endblock %}
+{% block script %}
+<script src="{% static 'network/jsfile.js' %}"></script>
+{% endblock %}

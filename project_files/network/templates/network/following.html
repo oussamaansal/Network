@@ -1,0 +1,22 @@
+{% extends "network/layout.html" %}
+{% load static %}
+{% block body %}
+
+<div class='container mt-4'>
+   
+    
+    <!-- Posts List -->
+    <div id="posts" class="posts">
+        
+    </div>
+    <div class="pagination-buttons">
+        <button id="previousPage" class="btn btn-primary mr-2"  >Previous</button>
+        <button id="nextPage" class="btn btn-primary">Next</button>
+    </div>
+    
+    
+</div>
+{% endblock %}
+{% block script %}
+    <script src="{% static 'network/following.js' %}"></script>
+{% endblock %}
